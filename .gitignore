@@ -40,4 +40,14 @@ example
 
 # generated native folders
 /ios
-/android
+
+# signing keystore (never commit your signing key)
+*.keystore
+*.jks
+
+# clés de signature et dépôt F-Droid (NE JAMAIS committer)
+_importante/
+fdroid-repo/
+
+# APK builds (not for source repo)
+*.apk

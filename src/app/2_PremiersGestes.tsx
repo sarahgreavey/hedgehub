@@ -154,7 +154,9 @@ export default function PremiersGestes() {
                 {language === "fr" ? (
                   <>
                     Ajoutez sur le hérisson de{" "}
-                    <Text style={styles.bold}>vieux tissus non effilochés</Text>{" "}
+                    <Text style={styles.bold}>
+                      vieux tissus propres et non effilochés
+                    </Text>{" "}
                     : torchons, serviettes éponges, serviettes de table, draps
                     ou langes. Caché, le hérisson sera moins stressé.
                   </>
@@ -167,7 +169,7 @@ export default function PremiersGestes() {
           <View style={styles.illustrationContainer}>
             <View style={styles.illustrationRow}>
               <Image
-                source={require("../../assets/images/2_1_144_dpi.png")} // Remplacez gloves.png par le vrai nom de votre fichier
+                source={require("../../assets/images/2_1_144dpi.png")} // Remplacez gloves.png par le vrai nom de votre fichier
                 style={styles.miniIcon}
               />
             </View>
@@ -215,7 +217,7 @@ export default function PremiersGestes() {
           <View style={styles.illustrationContainer}>
             <View style={styles.illustrationRow}>
               <Image
-                source={require("../../assets/images/2_3_144_dpi.png")} // Remplacez gloves.png par le vrai nom de votre fichier
+                source={require("../../assets/images/2_3_144dpi.png")} // Remplacez gloves.png par le vrai nom de votre fichier
                 style={styles.miniIcon}
               />
             </View>
@@ -234,7 +236,7 @@ export default function PremiersGestes() {
                     <Text style={styles.bold}>balance</Text>,{" "}
                     <Text style={styles.bold}>estimez à l&apos;œil</Text> la{" "}
                     <Text style={styles.bold}>taille du hérisson</Text> :
-                    mandarine, citron, orange ou pamplemousse.
+                    mandarine, gros citron, orange ou pamplemousse.
                   </>
                 ) : (
                   "If you don't have a small scale, estimate the hedgehog's size by eye: mandarin, lemon, orange, or grapefruit."
@@ -284,7 +286,7 @@ export default function PremiersGestes() {
           <View style={styles.illustrationContainer}>
             <View style={styles.illustrationRow}>
               <Image
-                source={require("../../assets/images/2_2_144_dpi.png")} // Remplacez gloves.png par le vrai nom de votre fichier
+                source={require("../../assets/images/2_2_144dpi.png")} // Remplacez gloves.png par le vrai nom de votre fichier
                 style={styles.miniIcon}
               />
             </View>
@@ -299,16 +301,33 @@ export default function PremiersGestes() {
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {language === "fr" ? (
                 <>
+                  <Text style={styles.bold}>Fermez les ailettes du carton</Text>{" "}
+                  de façon à ce qu&apos;elles{" "}
+                  <Text style={styles.bold}>se croisent.</Text>{" "}
+                </>
+              ) : (
+                "close the fins of the cardboard so that it crosses."
+              )}
+            </Text>
+          </View>
+          <View style={{ flexDirection: "row", marginBottom: 5 }}>
+            <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
+            <Text style={[styles.instructionText, { flex: 1 }]}>
+              {language === "fr" ? (
+                <>
                   Posez le <Text style={styles.bold}>carton au sol</Text> dans
                   une <Text style={styles.bold}>pièce</Text>{" "}
-                  <Text style={styles.bold}>calme</Text>, à l&apos;
+                  <Text style={styles.bold}>
+                    calme (par exemple une salle de bain ou grand WC)
+                  </Text>
+                  , à l&apos;
                   <Text style={styles.bold}>abri</Text> des{" "}
                   <Text style={styles.bold}>mouches</Text> et{" "}
                   <Text style={styles.bold}>sans autres animaux</Text> ou{" "}
                   <Text style={styles.bold}>prédateurs</Text> à proximité.
                 </>
               ) : (
-                "Put the box on the floor in a quiet room, protected from flies and away from other animals or predators."
+                "Put the box on the floor in a quiet room (bathroom or large toilet), protected from flies and away from other animals or predators."
               )}
             </Text>
           </View>
@@ -344,7 +363,7 @@ export default function PremiersGestes() {
           >
             <View style={styles.illustrationRow}>
               <Image
-                source={require("../../assets/images/2_4_144_dpi.png")} // Remplacez gloves.png par le vrai nom de votre fichier
+                source={require("../../assets/images/2_4_144dpi.png")} // Remplacez gloves.png par le vrai nom de votre fichier
                 style={styles.miniIcon}
               />
             </View>

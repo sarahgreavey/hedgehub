@@ -41,15 +41,17 @@ export default function PremiersGestes() {
       title: "5. LE SAVIEZ-VOUS ?",
       section1: "Statut juridique du Hérisson",
       section2: "Classement du hérisson",
-      section3: "Le tenrec-hérisson",
-      // section4: "Le hérisson vit-il en forêt ?",
+      section3: "Le régime du hérisson",
+      section4: "Les puces du hérisson",
+      section5: "Le tenrec-hérisson",
     },
     en: {
       title: "5. DID YOU KNOW?",
       section1: "Legal status of the hedgehog",
       section2: "Classification of the hedgehog",
-      section3: "The tenrec-hedgehog",
-      // section4: "Does the hedgehog live in the forest?",
+      section3: "The hedgehog diet",
+      section4: "Hedgehog fleas",
+      section5: "The tenrec-hedgehog",
     },
   }[language];
   const copy = (fr: string, en: string) => (language === "fr" ? fr : en);
@@ -98,7 +100,7 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy("Le hérisson d'Europe ", "The European hedgehog ")}
-                <Text style={styles.italic}>(Erinaceus europaeus)</Text>{" "}
+                <Text style={styles.italic}>Erinaceus Europaeus</Text>{" "}
                 {copy(
                   "est une espèce totalement protégée en France par la loi. Son statut de protection initial a été instauré par l'arrêté fondateur du ",
                   "is a species fully protected by law in France. Its initial protection status was established by the decree of ",
@@ -124,9 +126,22 @@ export default function PremiersGestes() {
             <View style={{ flexDirection: "row" }}>
               <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
-                {copy(
-                  "Il est donc interdit de le transporter, de le détruire, de le mutiler, de le capturer ou de l'apprivoiser. Vivant ou mort, il est aussi interdit de le transporter, de l'utiliser, de le vendre ou de l'acheter.",
-                  "It is therefore illegal to transport, kill, maim, capture or tame a hedgehog. Whether alive or dead, it is also illegal to transport, trade, use, sell or buy one.",
+                {language === "fr" ? (
+                  <>
+                    Il est donc <Text style={styles.bold}>interdit</Text> de le{" "}
+                    <Text style={styles.bold}>capturer</Text>, de le{" "}
+                    <Text style={styles.bold}>transporter</Text>, de le{" "}
+                    <Text style={styles.bold}>mutiler</Text>, de le{" "}
+                    <Text style={styles.bold}>tuer</Text> ou de vouloir l&apos;
+                    <Text style={styles.bold}>apprivoiser</Text>. Vivant ou
+                    mort, il est aussi <Text style={styles.bold}>interdit</Text>{" "}
+                    de le <Text style={styles.bold}>transporter</Text>, de
+                    l&apos;<Text style={styles.bold}>utiliser</Text>, de le{" "}
+                    <Text style={styles.bold}>vendre</Text> ou de l&apos;
+                    <Text style={styles.bold}>acheter</Text>.
+                  </>
+                ) : (
+                  "It is therefore forbidden to capture it, transport it, mutilate it, kill it or want to tame it. Alive or dead, it is also prohibited to transport, use, sell or buy it."
                 )}{" "}
               </Text>
             </View>
@@ -162,7 +177,7 @@ export default function PremiersGestes() {
           </View>
         </View>
 
-        {/* SECTION 1 */}
+        {/* SECTION 2 */}
         <View style={styles.section}>
           <Text style={styles.sectionNumber}>{t.section2} </Text>
           <View style={styles.instructionContainer}>
@@ -203,12 +218,8 @@ export default function PremiersGestes() {
           </View>
           <View style={styles.instructionContainer}>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.instructionTextBullet}>
-                {"\n"}
-                {"▶ "}
-              </Text>
+              <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
-                {"\n"}
                 {copy(
                   "Les causes principales du déclin :",
                   "Main causes of decline:",
@@ -263,13 +274,64 @@ export default function PremiersGestes() {
               />
             </View>
             <Text style={styles.imageLegende}>
-              © D.R. - Conflans-sainte-Honorine (Yvelines)
+              © D.R. - Conflans-Sainte-Honorine (Yvelines)
             </Text>
           </View>
         </View>
-        {/* SECTION 1 */}
+
+        {/* SECTION 3 */}
         <View style={styles.section}>
           <Text style={styles.sectionNumber}>{t.section3} </Text>
+          <View style={[styles.illustrationContainer, { gap: 4 }]}></View>
+          <View style={{ flexDirection: "row" }}>
+            <Text style={styles.instructionTextBullet}> {"▶"} </Text>
+            <Text style={[styles.instructionText, { flex: 1 }]}>
+              {copy(
+                "On pense à tord que le hérisson se nourrit essentiellement de limaces, d'escargots et de vers de terre. Alors que son régime devrait principalement être composé... d'insectes. C'est donc un insectivore ! \nIl peut également se nourrir de petits mammifères morts et de fruits tombés \nau sol.",
+                "It is wrongly believed that the hedgehog feeds mainly on slugs, snails and earthworms. While its diet is mainly composed of insects and is therefore an insectivore! it can also feed on small mammals and fallen fruits.",
+              )}
+            </Text>
+          </View>
+          <View style={(styles.instructionContainer, { marginTop: 4 })}>
+            <View style={{ flexDirection: "row" }}>
+              <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
+              <Text style={[styles.instructionText, { flex: 1 }]}>
+                {copy(
+                  "Du fait de la raréfaction des insectes, \ndûes aux pesticides, de la suppression des haies et des bocages, le hérisson est de plus en plus contraint de se nourrir de limaces, d'escargots et de vers de terre. Ces invertébrés sont des hôtes de parasites internes (vers pulmonaires et intestinaux) qui sont vecteurs de maladies et qui affaiblissent les hérissons. C'est une des causes de leur mortalité.",
+                  "Due to the scarcity of insects, due to pesticides, and the removal of hedges and bocages, the hedgehog is increasingly forced to feed on slugs, snails and earthworms. These invertebrates are hosts of internal parasites (lung and intestinal worms) which carry disease and weaken hedgehogs.",
+                )}
+              </Text>
+            </View>
+          </View>
+        </View>
+
+        {/* SECTION 4 */}
+        <View style={styles.section}>
+          <Text style={styles.sectionNumber}>{t.section4} </Text>
+          <View style={[styles.illustrationContainer, { gap: 4 }]}></View>
+          <View style={[styles.instructionContainer, { marginTop: 4 }]}>
+            <View style={{ flexDirection: "row" }}>
+              <Text style={styles.instructionTextBullet}> {"\n"} </Text>
+              <Text style={[styles.instructionText, { flex: 1 }]}>
+                {copy(
+                  "Du fait que le hérisson ai une températeure corporelle plus basse que les autres mammifères, les puces du hérisson ne peuvent pas survivre sur d'autres animaux. Le hérisson est donc un hôte spécifique de la puce ",
+                  "Because the hedgehog has a lower body temperature than other mammals, hedgehog fleas cannot survive on other animals. The hedgehog is therefore a specific host of ",
+                )}
+                <Text style={{ fontStyle: "italic" }}>
+                  {copy("Archaeopsylla erinacei.", "Archaeopsylla erinacei.")}
+                </Text>
+                {copy(
+                  " Ces puces ne peuvent pas vivre sur les humains, sur les chiens ni sur les chats.",
+                  " These fleas do not live on humans, dogs and cats.",
+                )}
+              </Text>
+            </View>
+          </View>
+        </View>
+
+        {/* SECTION 5 */}
+        <View style={styles.section}>
+          <Text style={styles.sectionNumber}>{t.section5} </Text>
           <View style={[styles.illustrationContainer, { gap: 4 }]}>
             <View style={styles.illustrationRow}>
               <Image
@@ -302,6 +364,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.white,
+  },
+  italique: {
+    fontStyle: "italic",
   },
   scrollView: {
     backgroundColor: COLORS.white,
@@ -390,6 +455,7 @@ const styles = StyleSheet.create({
   },
   instructionContainer: {
     gap: 5,
+    marginTop: 8,
   },
   instructionText: {
     fontSize: 18,

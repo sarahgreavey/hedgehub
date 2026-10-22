@@ -41,7 +41,8 @@ export default function Page() {
       protectionSubtitle:
         "Conseils aux entreprises, \nà l'administration et aux particuliers.",
       saviez: "LE SAVIEZ-VOUS ?",
-      footer: "© 2026\nSource : Alliance Hérisson, LPO, p'tikipic",
+      footer:
+        "Novembre 2026. \n Application pour la protection des hérissons, pensée par une humaine.",
     },
     en: {
       recognize: "RECOGNIZE\nA HEDGEHOG IN DISTRESS",
@@ -51,7 +52,7 @@ export default function Page() {
       protectionSubtitle:
         "Advice for businesses, \n administration and individuals.",
       saviez: "DID YOU KNOW?",
-      footer: "© 2026\nSource: Alliance Hérisson, LPO, p'tikipic",
+      footer: "November 2026",
     },
   }[language];
 
@@ -408,7 +409,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   footer: {
-    paddingTop: 16,
+    paddingTop: 13,
     paddingBottom: 12,
     paddingHorizontal: 20,
     alignItems: "center",

@@ -117,7 +117,7 @@ export default function Reconnaitre() {
             </View>
             <Text style={styles.RecommandationText}>
               {copy(
-                "Dans ces situations, observez l'évolution de loin. Les hérissons ne doivent pas être en situation de danger immédiat (mouches, prédateurs, routes, trous...). \nSinon, sécurisez le ou les hérissons (cliquez sur le bouton rouge ci-desous de la catégorie n°2 : Les premiers gestes).",
+                "Dans ces situations, observez l'évolution de loin. Les hérissons ne doivent pas être en situation de danger immédiat (mouches, prédateurs, routes, trous...). \nSinon, sécurisez le ou les hérissons. Cliquez sur le bouton rouge ci-dessous : Les premiers gestes.",
                 "In these situations, observe from a distance. The hedgehogs must not be in immediate danger (flies, predators, roads, holes, etc.). If they are, move them to safety by tapping the red button below for Category 2: First Aid.",
               )}
               {"\n"}
@@ -137,7 +137,7 @@ export default function Reconnaitre() {
               <Text style={styles.bulletText}>- </Text>
               <Text style={[styles.bulletText, { flex: 1 }]}>
                 {copy(
-                  "S'il ne revient pas, vérifiez si le reste de la portée est en difficulté dans les environs, puis ramassez le ou les juvéniles, placez-le/les dans un carton et contactez un centre de soins.",
+                  "S'il ne revient pas, vérifiez si le reste de la portée est en difficulté dans les environs, puis ramassez le ou les juvéniles, placez-le/les dans un carton (cliquez sur le bouton rouge ci-dessous) et contactez un centre de soins (bouton orange ci-dessous).",
                   "If the adult does not return, check whether the rest of the litter is nearby and in difficulty. Then pick up the juvenile hedgehog or hedgehogs, place them in a box and contact a wildlife care center.",
                 )}
               </Text>
@@ -159,7 +159,7 @@ export default function Reconnaitre() {
               <Text style={[styles.bulletText, { flex: 1 }]}>
                 <Text style={{ fontWeight: "bold", color: COLORS.red }}>
                   {copy(
-                    "Parcontre, en automne et en hiver, il faut impérativement mettre ce ou ces orphelins d'automne en sécurité (cliquez sur le bouton rouge ci-desous de la catégorie n°2 : Les premiers gestes).",
+                    "Parcontre, en automne et en hiver, il faut impérativement mettre ce ou ces orphelins d'automne en sécurité. Cliquez sur le bouton rouge ci-desous : les premiers gestes puis contacter un centre de soins.",
                     "In autumn and winter, any orphaned hedgehog must be moved to safety immediately (tap the red button below for Category 2: First Aid).",
                   )}
                 </Text>
@@ -171,6 +171,18 @@ export default function Reconnaitre() {
             >
               <View style={styles.actionButtonContent}>
                 <Text style={styles.actionButtonText}>{t.next}</Text>
+                <Text style={styles.arrowIcon}>➜</Text>
+              </View>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={[
+                styles.actionButton,
+                { backgroundColor: COLORS.yellowDark },
+              ]}
+              onPress={() => router.push("/3_CentresSoins")}
+            >
+              <View style={styles.actionButtonContent}>
+                <Text style={styles.actionButtonText}>{t.center}</Text>
                 <Text style={styles.arrowIcon}>➜</Text>
               </View>
             </TouchableOpacity>
@@ -192,7 +204,7 @@ export default function Reconnaitre() {
             {/* Bloc 1 */}
             <Text style={[styles.bulletText, { flex: 1 }]}>
               {copy(
-                "Il faut impérativement empêcher la hérissonne de fuir et d'abandonner son nid avec ses juvéniles. Elle risque de ne plus revenir les nourrir et les juvéniles mourront. Avec des gants ou une vieille serviette, placez la hérissonne, ses juvéniles et tous les éléments du nid (foin, feuilles...) ensemble afin qu'elle retrouve leurs odeurs :",
+                "Il faut impérativement empêcher la hérissonne de fuir et d'abandonner son nid avec ses juvéniles. Elle risque de ne plus revenir les nourrir et les juvéniles mourront. Avec des gants ou une vieille serviette, placez la hérissonne, ses juvéniles et tous les éléments du nid (foin, feuilles...) ensemble afin qu'elle retrouve ses odeurs :",
                 "It is essential to prevent the mother from fleeing while she has young. She may not return to feed them, and they could die. Using gloves or an old towel, place the mother, her young and all the nesting material (hay, leaves, etc.) together so she can recognize their scent again:",
               )}
             </Text>
@@ -225,10 +237,12 @@ export default function Reconnaitre() {
               )}
             </Text>
             <Image
-              source={require("../../assets/images/grillage.png")} // Remplacez par l'image hérisson cachectique
+              source={require("../../assets/images/grillage.png")}
               style={styles.contentImage}
             />
-            <Text style={styles.imageLegende}>© D.R.</Text>
+            <Text style={styles.imageLegende}>
+              © D.R. - Maisons-Laffitte (Yvelines)
+            </Text>
             <Text style={styles.bulletText}>
               {"\n"}
               {copy(
@@ -274,7 +288,7 @@ export default function Reconnaitre() {
               <Text style={styles.bulletTextRed}>▶ </Text>
               <Text style={[styles.bulletText, { flex: 1 }]}>
                 {copy(
-                  "Des bébés hérissons aux yeux fermés, roses avec des piquants blancs, trouvés hors du nid : mettez des gants, déposez-les dans un carton avec une bouillotte entourée d'un tissu pour éviter les brûlures.",
+                  "Des bébés hérissons aux yeux fermés, roses avec des piquants blancs, trouvés hors du nid : mettez des gants, prenez-les et déposez-les dans un carton avec une bouillotte entourée d'un tissu pour éviter les brûlures.",
                   "Baby hedgehogs with closed eyes, pink skin and white spines found outside the nest: put on gloves, place them in a box with a hot-water bottle wrapped in fabric to prevent burns.",
                 )}
                 {"\n"}
@@ -284,7 +298,7 @@ export default function Reconnaitre() {
               <Text style={styles.bulletTextRed}>▶ </Text>
               <Text style={[styles.bulletText, { flex: 1 }]}>
                 {copy(
-                  "Il est couché sur le côté ou à plat ventre, prostré, et ne bouge presque pas.",
+                  "Il est couché sur le côté ou à plat ventre, prostré et ne bouge presque pas.",
                   "It is lying on its side or stomach, listless and barely moving.",
                 )}
                 {"\n"}
@@ -368,7 +382,7 @@ export default function Reconnaitre() {
               <Text style={styles.bulletTextRed}>▶ </Text>
               <Text style={[styles.bulletText, { flex: 1 }]}>
                 {copy(
-                  "Des mouches sont autour de lui. Il est infesté d'œufs et d'asticots, une situation extrêmement grave. Les œufs de mouches forment des grappes autour des yeux et/ou des orifices naturels et au niveau du muscle peaucier (aussi appelé jupe de poils).",
+                  "Des mouches sont autour de lui. Il est infesté d'œufs et/ou d'asticots, une situation extrêmement grave. Les œufs de mouches forment des grappes autour des yeux et/ou des orifices naturels et au niveau du muscle peaucier (aussi appelé jupe de poils).",
                   "Flies are around it. It is infested with eggs and maggots, a life-threatening condition. Fly eggs appear in clusters around the eyes and/or natural openings, near the skin muscle also known as the skirt of fur.",
                 )}
               </Text>
@@ -395,7 +409,7 @@ export default function Reconnaitre() {
               <Text style={[styles.bulletText, { flex: 1 }]}>
                 <Text style={{ fontWeight: "bold", color: COLORS.red }}>
                   {copy(
-                    "Dans toutes ces situations ci-dessus, il faut sans plus attendre mettre en sécurité le hérisson (cf. plus bas, Les premiers gestes) puis contacter un centre de soins.",
+                    "Dans toutes ces situations ci-dessus, il faut sans plus attendre mettre en sécurité le hérisson. Cliquez sur le bouton rouge ci-dessous : les premiers gestes puis contacter un centre de soins.",
                     "In all the situations mentioned above, you must immediately secure the hedgehog (see below) and then contact a wildlife rehabilitation center.",
                   )}
                 </Text>

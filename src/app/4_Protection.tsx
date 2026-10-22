@@ -48,7 +48,8 @@ export default function PremiersGestes() {
       title: "4. LA PROTECTION\nDES HÉRISSONS",
       intro:
         "Vous pouvez aider les hérissons.\nVoici quelques informations et conseils.",
-      section1: "Don, parrainages et cagnottes solidaires",
+      section1:
+        "Bénévolat, dons en nature, parrainages de hérissons et cagnottes solidaires",
       section2: "Création d'un passage entre les jardins",
       section3:
         "Toute l'année, mettez à disposition de l'eau dans un bac peu profond.",
@@ -57,7 +58,6 @@ export default function PremiersGestes() {
       section6: "Condamnation des trous et des évacuations",
       section7:
         "Aménager une rampe sur\nles plans d'eau et les rebords de piscines",
-
       section8:
         "Conseil pour les administrations, les sociétés de construction immobilier...",
     },
@@ -65,7 +65,8 @@ export default function PremiersGestes() {
       title: "4. PROTECTING\nHEDGEHOGS",
       intro:
         "You can help hedgehogs.\nHere are a few tips and pieces of advice\nto follow.",
-      section1: "Donations, sponsorships and solidarity fundraisers",
+      section1:
+        "Volunteering, in-kind donations, hedgehog sponsorships and solidarity funds",
       section2: "Creating a passage between gardens",
       section3: "All year round, provide water in a shallow tray.",
       section4: "Offer cat kibble",
@@ -126,8 +127,8 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}> </Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "Les centres de soins vivent de dons et parfois de subventions. En plus de bénévoles, ils ont besoin d'argent pour fonctionner : frais vétérinaires, nourriture, matériels médicaux... Tous ont le même objectif : soigner les hérissons. Ce sont des associations reconnues d'intérêt général ; votre don peut être déductible des impôts. Renseignez-vous sur les sites internet auprès de ces associations.",
-                  "Wildlife care centers rely on donations and sometimes grants. Alongside volunteer support, they need funding to operate: veterinary fees, food and medical supplies. Every center shares the same goal: treating hedgehogs. These associations are recognized as being of public interest, so your donation may be tax-deductible. Check their websites for current fundraising campaigns.",
+                  "Si vous souhaitez apporter un don en nature (nourriture, pochon polaire, cages ou matériel médical...), renseignez-vous auparavant, auprès de l'association concernant ses besoins. \n\nLes centres de soins vivent essentiellement de dons de particuliers et parfois de rares subventions régionales, départementales ou municipales... En plus de personnes bénévoles, ils ont besoin d'argent pour soigner les hérissons : frais vétérinaires, nourriture, matériels médicaux... \n\nCes centres ont le même objectif : soigner les hérissons. Ce sont des associations reconnues d'intérêt général ; votre don peut être déductible des impôts. Renseignez-vous sur les sites internet auprès de ces associations.",
+                  "If you wish to make a donation in kind (food, fleece bag, cages or medical equipment...), find out beforehand from the association regarding its needs. \n\nThe care centers live mainly from donations from individuals and sometimes from rare regional, departmental or municipal subsidies... In addition to volunteers, they need money to care for hedgehogs: veterinary costs, food, medical equipment... \n\nAll have the same goal: to care for hedgehogs. These are recognized associations of general interest; your donation may be tax deductible. Find out more on the websites from these associations.",
                 )}
               </Text>
             </View>
@@ -144,7 +145,7 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "D'un commun accord avec votre voisin ou voisine, aménagez un passage en faisant un trou de 15 x 15 cm dans la clôture ou en coupant le grillage. Nos zones urbaines sont de plus en plus cloisonnées par des barrières et des clôtures trop hautes et trop proche du sol pour pouvoir s'y glisser par en dessous. Ces passages spécifiques entre les jardins limiteront les traversées de nos routes.",
+                  "D'un commun accord avec votre voisine ou voisin, aménagez un passage en forant un trou de 15 x 15 cm dans la clôture ou en coupant le grillage. Nos zones urbaines sont cloisonnées par des clôtures et des barrières trop hautes et trop proche du sol pour pouvoir s'y glisser par en-dessous. Ces passages entre les jardins limiteront les traversées de nos routes.",
                   "With your neighbour's agreement, make a 15 x 15 cm opening in the fence or cut the wire mesh. Urban areas are increasingly divided by barriers and fences that are too high and too close to the ground for hedgehogs to squeeze underneath. These passages between gardens will reduce the need for hedgehogs to cross roads.",
                 )}
               </Text>
@@ -198,7 +199,7 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "Même en hiver, proposez de l'eau : les hérissons n'hibernent pas toute la saison et se réveillent. Vérifiez que l'eau n'est pas gelée.",
+                  "Même en hiver, proposez de l'eau : les hérissons n'hivernent pas toute la saison et se réveillent. Vérifiez que l'eau ne soit pas gelée.",
                   "Offer water in winter too: hedgehogs do not hibernate for the entire season and may wake up. Check that the water has not frozen.",
                 )}
               </Text>
@@ -219,7 +220,7 @@ export default function PremiersGestes() {
         {/* SECTION 2 */}
         <View style={styles.section}>
           <Text style={styles.sectionNumber}>{t.section4}</Text>
-          <View style={{ flexDirection: "row" }}>
+          <View style={{ flexDirection: "row", marginTop: 8 }}>
             <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {copy(
@@ -237,12 +238,12 @@ export default function PremiersGestes() {
               )}
             </Text>
           </View>
-          <View style={{ flexDirection: "row" }}>
+          <View style={{ flexDirection: "row", marginTop: 8 }}>
             <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {copy(
-                "Si vous souhaitez les aider à l'entrée ou à la sortie de l'hiver et en période de sécheresse et de canicule :",
-                "If you want to help them, especially during periods of drought and heatwaves, or at the start and end of winter:",
+                "Si vous souhaitez les aider à l'entrée ou à la sortie de l'hiver et en période de sécheresse, de canicule ou toute l'année:",
+                "If you want to help them at the start or end of winter and during periods of drought, heatwave or all year round:",
               )}
             </Text>
           </View>
@@ -269,8 +270,8 @@ export default function PremiersGestes() {
               <Text style={styles.bulletListDot}>{"- "}</Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "privilégier les croquettes pour chats ou chaton car leur taille plus petites correspondent mieux à leur petite machoire ;",
-                  "prefer kibble for cats or kittens because their smaller size corresponds better to their small jaw;",
+                  "privilégier les croquettes pour chats ou chaton car elles sont significativement plus riches en protéines et leur taille plus petites correspondent mieux à leur petite machoire ;",
+                  "Opt for cat or kitten kibble, as it is significantly higher in protein, and its smaller size is better suited to their small jaws;",
                 )}
               </Text>
             </View>
@@ -305,11 +306,11 @@ export default function PremiersGestes() {
         {/* SECTION 4 */}
         <View style={styles.section}>
           <Text style={styles.sectionNumber}>{t.section5}</Text>
-          <View style={{ flexDirection: "row" }}>
+          <View style={{ flexDirection: "row", marginTop: 8 }}>
             <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {copy(
-                "Avec du bois de palettes brut ou des chutes de lames (clôtures, bardages...), construisez une cantine sans fond, à double entrée décalée, afin que les prédateurs n'accèdent pas directement à la nourriture et aux hérissons. À chaque entrée, vissez une bride de fixation ou un raccord de conduit d'air emboîté avec un tuyau flexible.",
+                "Avec du bois de palettes brut ou des chutes de lames en bois pour clôtures, construisez une cantine sans fond, à double entrée décalée, afin que les prédateurs n'accèdent pas directement à la nourriture et aux hérissons. À chaque entrée, vissez une bride de fixation ou un raccord de conduit d'air emboîté avec un tuyau flexible.",
                 "Use untreated pallet wood or leftover boards (from fences or cladding) to build a bottomless feeding station with two offset entrances, so predators cannot reach the food or the hedgehogs directly. At each entrance, attach a fixing collar or duct connector fitted with flexible aluminium tubing.",
               )}
             </Text>
@@ -343,7 +344,7 @@ export default function PremiersGestes() {
               </Text>
               <Text style={[styles.tipText, { flex: 1 }]}>
                 {copy(
-                  "avec une hauteur de 35 cm, la cantine peut accueillir une mangeoire automatique ;",
+                  "avec une hauteur de 35 cm, la cantine peut accueillir une mangeoire programmée ;",
                   "with a height of 35 cm, the feeding station can accommodate an automatic feeder;",
                 )}
               </Text>
@@ -365,7 +366,7 @@ export default function PremiersGestes() {
               </Text>
               <Text style={[styles.tipText, { flex: 1 }]}>
                 {copy(
-                  "multipliez les points de nourrissage pour limiter les rencontres entre eux et la transmission des maladies ;",
+                  "multipliez les points de nourrissage pour éviter les éventuels conflits entre eux et la transmission des maladies ;",
                   "multiply the feeding points to limit encounters between them and the transmission of diseases;",
                 )}
               </Text>
@@ -385,7 +386,7 @@ export default function PremiersGestes() {
           <View style={styles.illustrationContainer}>
             <View style={styles.illustrationRow}>
               <Image
-                source={require("../../assets/images/4_2_144_dpi.png")} // Remplacez gloves.png par le vrai nom de votre fichier
+                source={require("../../assets/images/4_2_144_dpi.png")}
                 style={styles.miniIcon}
               />
             </View>
@@ -393,7 +394,7 @@ export default function PremiersGestes() {
           <View style={styles.illustrationContainer}>
             <View style={styles.illustrationRow}>
               <Image
-                source={require("../../assets/images/bride_tuyau_inox.jpg")} // Remplacez gloves.png par le vrai nom de votre fichier
+                source={require("../../assets/images/bride_tuyau_inox.jpg")}
                 style={styles.miniIcon}
               />
             </View>
@@ -401,7 +402,7 @@ export default function PremiersGestes() {
           <View style={[styles.illustrationContainer, { gap: 4 }]}>
             <View style={styles.illustrationRow}>
               <Image
-                source={require("../../assets/images/cantine.jpg")} // Remplacez gloves.png par le vrai nom de votre fichier
+                source={require("../../assets/images/cantine.jpg")}
                 style={styles.miniIcon}
               />
             </View>
@@ -411,7 +412,7 @@ export default function PremiersGestes() {
         {/* SECTION 4 */}
         <View style={[styles.section, { marginBottom: 0 }]}>
           <Text style={styles.sectionNumber}>{t.section6}</Text>
-          <View style={{ flexDirection: "row" }}>
+          <View style={{ flexDirection: "row", marginTop: 8 }}>
             <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {copy(
@@ -424,7 +425,7 @@ export default function PremiersGestes() {
         <View style={[styles.illustrationContainer, { gap: 4 }]}>
           <View style={styles.illustrationRow}>
             <Image
-              source={require("../../assets/images/images_evacuation.jpg")} // Remplacez gloves.png par le vrai nom de votre fichier
+              source={require("../../assets/images/images_evacuation.jpg")}
               style={styles.miniIcon}
             />
           </View>
@@ -437,7 +438,7 @@ export default function PremiersGestes() {
             {"\n\n"}
             {t.section7}
           </Text>
-          <View style={{ flexDirection: "row" }}>
+          <View style={{ flexDirection: "row", marginTop: 8 }}>
             <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {copy(
@@ -450,7 +451,7 @@ export default function PremiersGestes() {
         <View style={[styles.illustrationContainer, { gap: 4 }]}>
           <View style={styles.illustrationRow}>
             <Image
-              source={require("../../assets/images/images_rampe.jpg")} // Remplacez gloves.png par le vrai nom de votre fichier
+              source={require("../../assets/images/images_rampe.jpg")}
               style={styles.miniIcon}
             />
           </View>
@@ -492,7 +493,7 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "L'utilisation de barrières ou glissières de sécurité le long des routes sans échappées devrait être interdits, comme sur la photo ci-dessous. Le hérisson pris au piège par cette longue barrière sans échappée retournera sur la route et sera percuté par une voiture.",
+                  "L'utilisation de barrières ou glissières de sécurité le long des routes sans échappées sont des pièges mortels, comme sur la photo ci-dessous. Le hérisson longe cette longue barrière sans échappée puis retournera vers la route avec la forte probabilité d'être percuté par une voiture.",
                   "Road barriers or guardrails without escape openings should be prohibited, as shown in the photo below. A hedgehog trapped behind a long barrier with no escape opening will return to the road and be hit by a car.",
                 )}
               </Text>
@@ -500,7 +501,7 @@ export default function PremiersGestes() {
             <View style={[styles.illustrationContainer, { gap: 4 }]}>
               <View style={styles.illustrationRow}>
                 <Image
-                  source={require("../../assets/images/route.jpg")} // Remplacez gloves.png par le vrai nom de votre fichier
+                  source={require("../../assets/images/route.jpg")}
                   style={styles.miniIcon}
                 />
               </View>
@@ -608,6 +609,7 @@ const styles = StyleSheet.create({
   },
   instructionContainer: {
     gap: 5,
+    marginTop: 8,
   },
   bulletList: {
     marginTop: 6,

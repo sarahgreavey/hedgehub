@@ -42,7 +42,7 @@ export default function CentresSoins() {
       searchLabel:
         "Tapez le numéro de votre département ou celui le plus proche de chez vous.\nOu tapez le nom du centre (si vous le connaissez).",
       follow: "Suivez les conseils du centre de soins. Merci beaucoup !",
-      update: "Dernière mise à jour : Avril 2026",
+      update: "Dernière mise à jour : Juin 2026",
       noResult: "Aucun centre trouvé pour cette recherche.",
       introHedgehog:
         "Le hérisson est maintenant en sécurité dans un carton posé au sol et dans une pièce au calme.",
@@ -50,13 +50,13 @@ export default function CentresSoins() {
       button2: "2. LES PREMIERS GESTES",
       address: "adresse et heure de découverte,",
       weight:
-        "poids ou à défaut estimation visuelle de la taille du hérisson (mandarine, citron, orange ou pamplemousse),",
+        "poids ou à défaut, estimation visuelle de la taille du hérisson : mandarine, citron, orange ou pamplemousse,",
       behavior:
-        "comportement : apathique, respiration bruyante, mobile, se met-il en boule quand on s'approche ?",
+        "comportement : apathique ou mobile, \nse met-il en boule quand on s'approche ? \na-t-il une respiration bruyante, \ntousse-t-il ?,",
       injuries:
         "a-t-il une ou des blessures, des œufs de mouches, des asticots ?",
       nearby: "y a-t-il d'autres hérissons à proximité ?",
-      note: "Les personnes capacitaires sont des bénévoles. En plus de leur vie personnelle et professionnelle, elles consacrent leur temps aux soins des hérissons. N'hésitez pas à renouveler votre appel : elles ne peuvent pas se déplacer.\n\nDu fait de son statut protégé, conservez une trace écrite prouvant votre intention de déposer le hérisson dans un centre de soins, en cas de contrôle pendant le transport.\n\nMerci pour votre sensibilité à l'égard de la faune sauvage.",
+      note: "Les personnes capacitaires sont des bénévoles. En plus de leur vie personnelle et professionnelle, elles consacrent leur temps aux soins de la faune sauvage. N'hésitez pas à renouveler votre appel et elles ne peuvent pas se déplacer.\n\nDu fait de son statut protégé, conservez une trace écrite prouvant votre intention de déposer le hérisson dans un centre de soins, en cas de contrôle pendant le transport.\n\nMerci pour votre sensibilité à l'égard de la faune sauvage.",
       source: "Source : ",
     },
     en: {
@@ -66,7 +66,7 @@ export default function CentresSoins() {
       searchLabel:
         "Type your department number or the one closest to you.\nOr type the center name (if you know it).",
       follow: "Follow the care center's advice. Thank you very much!",
-      update: "Last update: April 2026",
+      update: "Last update: June 2026",
       noResult: "No center found for this search.",
       introHedgehog:
         "The hedgehog is now safe in a box on the floor in a quiet room.",

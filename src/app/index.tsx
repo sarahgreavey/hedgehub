@@ -42,7 +42,7 @@ export default function Page() {
         "Conseils aux entreprises, \nà l'administration et aux particuliers.",
       saviez: "LE SAVIEZ-VOUS ?",
       footer:
-        "Novembre 2026. \n Application pour la protection des hérissons, pensée par une humaine.",
+        "Nov. 2026. Pour la protection des hérissons pensée par une humaine. Un concentré d'informations reposant sur la collaboration de citoyens.nes précieux.ses en partageant leurs connaissances. ",
     },
     en: {
       recognize: "RECOGNIZE\nA HEDGEHOG IN DISTRESS",
@@ -52,7 +52,8 @@ export default function Page() {
       protectionSubtitle:
         "Advice for businesses, \n administration and individuals.",
       saviez: "DID YOU KNOW?",
-      footer: "November 2026",
+      footer:
+        "Nov. 2026. Dedicated to the protection of hedgehogs, designed by a human. A concentrate of information based on the collaboration of valuable citizens by sharing their knowledge.",
     },
   }[language];
 
@@ -409,7 +410,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   footer: {
-    paddingTop: 13,
+    paddingTop: 7,
     paddingBottom: 12,
     paddingHorizontal: 20,
     alignItems: "center",

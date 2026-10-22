@@ -191,9 +191,7 @@ export default function PremiersGestes() {
                 <Text
                   accessibilityRole="link"
                   onPress={() =>
-                    Linking.openURL(
-                      "https://www.iucnredlist.org/fr/search?query=h%C3%A9risson&searchType=species",
-                    )
+                    Linking.openURL("https://www.iucnredlist.org/fr")
                   }
                   style={{ color: "blue", textDecorationLine: "underline" }}
                 >
@@ -348,8 +346,18 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}> {"\n"} </Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "Génétiquement, le tenrec-hérisson est plus proche du lamantin ou de l'éléphant que du hérisson. Il appartient au groupe des Afrosoricida, très éloigné des Eulipotyphla, qui comprend les hérissons. Cette ressemblance morphologique est due à un phénomène de convergence et non à un ancêtre commun.",
-                  "Genetically, the hedgehog tenrec is more closely related to manatees and elephants than to hedgehogs. It belongs to the Afrosoricida, a group genetically distant from the Eulipotyphla, which includes hedgehogs. Their similar appearance is due to convergent evolution, not a shared ancestor.",
+                  "Génétiquement, le tenrec-hérisson est plus proche du lamantin ou de l'éléphant que du hérisson. Il appartient au groupe des ",
+                  "Genetically, the hedgehog tenrec is more closely related to manatees and elephants than to hedgehogs. It belongs to the ",
+                )}
+                <Text style={styles.italic}>Afrosoricida</Text>
+                {copy(
+                  ", très éloigné des ",
+                  ", a group genetically distant from the ",
+                )}
+                <Text style={styles.italic}>Eulipotyphla</Text>
+                {copy(
+                  ", qui comprend les hérissons. Cette ressemblance morphologique est due à un phénomène de convergence et non à un ancêtre commun.",
+                  ", which includes hedgehogs. Their similar appearance is due to convergent evolution, not a shared ancestor.",
                 )}
               </Text>
             </View>

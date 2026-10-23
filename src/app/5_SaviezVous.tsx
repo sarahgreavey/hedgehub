@@ -285,7 +285,7 @@ export default function PremiersGestes() {
             <Text style={styles.instructionTextBullet}> {"▶"} </Text>
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {copy(
-                "On pense à tord que le hérisson se nourrit essentiellement de limaces, d'escargots et de vers de terre. Alors que son régime devrait principalement être composé... d'insectes. C'est donc un insectivore ! \nIl peut également se nourrir de petits mammifères morts et de fruits tombés \nau sol.",
+                "On pense à tord que le hérisson se nourrit essentiellement de limaces, d'escargots et de vers de terre. Alors que son régime devrait principalement être composé... d'insectes et de ses larves. C'est donc un insectivore ! \nIl peut également se nourrir de petits mammifères morts et de fruits tombés \nau sol.",
                 "It is wrongly believed that the hedgehog feeds mainly on slugs, snails and earthworms. While its diet is mainly composed of insects and is therefore an insectivore! it can also feed on small mammals and fallen fruits.",
               )}
             </Text>

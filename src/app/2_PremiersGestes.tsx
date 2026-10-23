@@ -317,10 +317,12 @@ export default function PremiersGestes() {
                 <>
                   Posez le <Text style={styles.bold}>carton au sol</Text> dans
                   une <Text style={styles.bold}>pièce</Text>{" "}
+                  <Text style={styles.bold}>calme </Text>
+                  (par exemple,
                   <Text style={styles.bold}>
-                    calme (par exemple une salle de bain ou grand WC)
-                  </Text>
-                  , à l&apos;
+                    une salle de bain ou grand WC),
+                  </Text>{" "}
+                  à l&apos;
                   <Text style={styles.bold}>abri</Text> des{" "}
                   <Text style={styles.bold}>mouches</Text> et{" "}
                   <Text style={styles.bold}>sans autres animaux</Text> ou{" "}
@@ -338,7 +340,7 @@ export default function PremiersGestes() {
                 <>
                   Appelez le <Text style={styles.bold}>centre de soins</Text> le{" "}
                   <Text style={styles.bold}>plus proche</Text> en cliquant sur
-                  le bouton ci-dessous.
+                  le bouton orange ci-dessous.
                 </>
               ) : (
                 "Call the nearest wildlife care center using the button below."

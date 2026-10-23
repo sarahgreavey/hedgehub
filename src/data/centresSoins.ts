@@ -355,7 +355,7 @@ export const CENTERS_DATA = [
   },
   {
     id: 47,
-    dept: "Corse",
+    dept: "2B Corse",
     city: "Olmeta-di-Tuda",
     name: "U Pettirossu",
     phone: "07 88 83 70 22",
@@ -411,7 +411,7 @@ export const CENTERS_DATA = [
   },
   {
     id: 54,
-    dept: "VD",
+    dept: "SUISSE",
     city: "Le Vaud",
     name: "Zoo La Garenne",
     phone: "+41 22 366 11 14",
@@ -419,7 +419,7 @@ export const CENTERS_DATA = [
   },
   {
     id: 55,
-    dept: "VD",
+    dept: "SUISSE",
     city: "Chavornay",
     name: "ERMINEA",
     phone: "+41 24 565 37 99",

@@ -53,13 +53,13 @@ export default function PremiersGestes() {
       section2: "Création d'un passage entre les jardins",
       section3:
         "Toute l'année, mettez à disposition de l'eau dans un bac peu profond.",
-      section4: "Les croquettes",
+      section4: "La nourriture",
       section5: "Construction d'une cantine avec plan",
       section6: "Condamnation des trous et des évacuations",
       section7:
         "Aménager une rampe sur\nles plans d'eau et les rebords de piscines",
       section8:
-        "Conseil pour les administrations, les sociétés de construction immobilier...",
+        "Conseil pour les administrations, les sociétés de construction immobilière...",
     },
     en: {
       title: "4. PROTECTING\nHEDGEHOGS",
@@ -69,7 +69,7 @@ export default function PremiersGestes() {
         "Volunteering, in-kind donations, hedgehog sponsorships and solidarity funds",
       section2: "Creating a passage between gardens",
       section3: "All year round, provide water in a shallow tray.",
-      section4: "Offer cat kibble",
+      section4: "The food",
       section5: "Build a feeding station with a plan",
       section6: "Closing off holes, drains and openings...",
       section7: "Install a ramp at ponds and along swimming pool edges",
@@ -145,7 +145,7 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "D'un commun accord avec votre voisine ou voisin, aménagez un passage en forant un trou de 15 x 15 cm dans la clôture ou en coupant le grillage. Nos zones urbaines sont cloisonnées par des clôtures et des barrières trop hautes et trop proche du sol pour pouvoir s'y glisser par en-dessous. Ces passages entre les jardins limiteront les traversées de nos routes.",
+                  "D'un commun accord avec votre voisin.e, aménagez un passage en forant un trou de 15 x 15 cm dans la clôture ou en coupant le grillage. Nos zones urbaines sont cloisonnées par des clôtures et des barrières trop hautes et trop proche du sol pour pouvoir s'y glisser par en-dessous. Ces passages entre les jardins limiteront les traversées de nos routes.",
                   "With your neighbour's agreement, make a 15 x 15 cm opening in the fence or cut the wire mesh. Urban areas are increasingly divided by barriers and fences that are too high and too close to the ground for hedgehogs to squeeze underneath. These passages between gardens will reduce the need for hedgehogs to cross roads.",
                 )}
               </Text>
@@ -199,7 +199,7 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "Même en hiver, proposez de l'eau : les hérissons n'hivernent pas toute la saison et se réveillent. Vérifiez que l'eau ne soit pas gelée.",
+                  "Même en hiver, proposez de l'eau : les hérissons n'hivernent pas d'une seule traite du mois d'octobre jusqu'au mois de mars/avril, et peuvent se réveiller. Vérifiez que l'eau ne soit pas gelée.",
                   "Offer water in winter too: hedgehogs do not hibernate for the entire season and may wake up. Check that the water has not frozen.",
                 )}
               </Text>
@@ -242,7 +242,7 @@ export default function PremiersGestes() {
             <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {copy(
-                "Si vous souhaitez les aider à l'entrée ou à la sortie de l'hiver et en période de sécheresse, de canicule ou toute l'année:",
+                "Si vous souhaitez les aider à l'entrée (Automne) à la sortie (Printemps)de l'hiver et en période de sécheresse, de canicule ou toute l'année:",
                 "If you want to help them at the start or end of winter and during periods of drought, heatwave or all year round:",
               )}
             </Text>

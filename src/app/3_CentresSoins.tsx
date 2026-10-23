@@ -5,6 +5,7 @@ import { CENTERS_DATA } from "../data/centresSoins";
 
 import {
   Image,
+  Keyboard,
   Linking,
   Platform,
   SafeAreaView,
@@ -50,7 +51,7 @@ export default function CentresSoins() {
       button2: "2. LES PREMIERS GESTES",
       address: "adresse et heure de découverte,",
       weight:
-        "poids ou à défaut, estimation visuelle de la taille du hérisson : mandarine, citron, orange ou pamplemousse,",
+        "poids ou à défaut, estimation visuelle de la taille du hérisson : mandarine, gros citron, orange ou pamplemousse,",
       behavior:
         "comportement : apathique ou mobile, \nse met-il en boule quand on s'approche ? \na-t-il une respiration bruyante, \ntousse-t-il ?,",
       injuries:
@@ -155,6 +156,8 @@ export default function CentresSoins() {
         ref={scrollViewRef}
         style={styles.scrollView}
         contentContainerStyle={styles.scrollContent}
+        keyboardDismissMode="on-drag"
+        keyboardShouldPersistTaps="handled"
       >
         <Text style={styles.introText}>{t.intro}</Text>
 
@@ -276,6 +279,8 @@ export default function CentresSoins() {
             }
             value={searchQuery}
             onChangeText={setSearchQuery}
+            returnKeyType="search"
+            onSubmitEditing={() => Keyboard.dismiss()}
           />
           <Text style={styles.searchLabel}>
             {"\n"}

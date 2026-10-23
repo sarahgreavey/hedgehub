@@ -159,7 +159,7 @@ export default function Reconnaitre() {
               <Text style={[styles.bulletText, { flex: 1 }]}>
                 <Text style={{ fontWeight: "bold", color: COLORS.red }}>
                   {copy(
-                    "Parcontre, en automne et en hiver, il faut impérativement mettre ce ou ces orphelins d'automne en sécurité. Cliquez sur le bouton rouge ci-desous : les premiers gestes puis contacter un centre de soins.",
+                    "Parcontre, en automne et en hiver, il faut impérativement mettre ce.s orphelin.s d'automne en sécurité. Cliquez sur le bouton rouge ci-dessous : les premiers gestes puis contacter un centre de soins.",
                     "In autumn and winter, any orphaned hedgehog must be moved to safety immediately (tap the red button below for Category 2: First Aid).",
                   )}
                 </Text>

@@ -9,12 +9,16 @@
     "userInterfaceStyle": "automatic",
     "ios": {
       "icon": "./assets/expo.icon",
-      "bundleIdentifier": "org.hedgehub.app"
+      "bundleIdentifier": "org.hedgehub.app",
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
     },
     "android": {
       "icon": "./assets/images/icon.png",
       "predictiveBackGestureEnabled": false,
-      "package": "org.hedgehub.app"
+      "package": "org.hedgehub.app",
+      "runtimeVersion": "1.0.0"
     },
     "web": {
       "output": "static",
@@ -32,7 +36,10 @@
         "expo-build-properties",
         {
           "android": {
-            "buildArchs": ["arm64-v8a", "armeabi-v7a"]
+            "buildArchs": [
+              "arm64-v8a",
+              "armeabi-v7a"
+            ]
           }
         }
       ]
@@ -46,6 +53,9 @@
       "eas": {
         "projectId": "d8ed90f3-829e-403f-b144-ffc07836e627"
       }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/d8ed90f3-829e-403f-b144-ffc07836e627"
     }
   }
 }

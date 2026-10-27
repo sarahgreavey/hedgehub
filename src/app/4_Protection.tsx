@@ -127,7 +127,7 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}> </Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "Si vous souhaitez apporter un don en nature (nourriture, pochon polaire, cages ou matériel médical...), renseignez-vous auparavant, auprès de l'association concernant ses besoins. \n\nLes centres de soins vivent essentiellement de dons de particuliers et parfois de rares subventions régionales, départementales ou municipales... En plus de personnes bénévoles, ils ont besoin d'argent pour soigner les hérissons : frais vétérinaires, nourriture, matériels médicaux... \n\nCes centres ont le même objectif : soigner les hérissons. Ce sont des associations reconnues d'intérêt général ; votre don peut être déductible des impôts. Renseignez-vous sur les sites internet auprès de ces associations.",
+                  "Si vous souhaitez apporter un don en nature (nourriture, pochon polaire, cages ou matériel médical...), renseignez-vous auparavant, auprès de l'association concernant ses besoins. \n\nSi vous avez un peu de temps à consacrer, les centres de soins ont besoin de personnes qui puissent rapatrier les hérissons en détresse du lieu de leur découverte vers un centre de soins. Faites vous connaître auprès de ces derniers.\n\nLes centres de soins vivent essentiellement de dons de particuliers et parfois de rares subventions régionales, départementales ou municipales... En plus de personnes bénévoles, ils ont besoin d'argent pour soigner les hérissons : frais vétérinaires, nourriture, matériels médicaux... \n\nCes centres ont le même objectif : soigner les hérissons. Ce sont des associations reconnues d'intérêt général ; Votre don peut être déductible des impôts. Renseignez-vous sur les sites internet auprès de ces associations.",
                   "If you wish to make a donation in kind (food, fleece bag, cages or medical equipment...), find out beforehand from the association regarding its needs. \n\nThe care centers live mainly from donations from individuals and sometimes from rare regional, departmental or municipal subsidies... In addition to volunteers, they need money to care for hedgehogs: veterinary costs, food, medical equipment... \n\nAll have the same goal: to care for hedgehogs. These are recognized associations of general interest; your donation may be tax deductible. Find out more on the websites from these associations.",
                 )}
               </Text>
@@ -242,8 +242,8 @@ export default function PremiersGestes() {
             <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {copy(
-                "Si vous souhaitez les aider à l'entrée (Automne) à la sortie (Printemps)de l'hiver et en période de sécheresse, de canicule ou toute l'année:",
-                "If you want to help them at the start or end of winter and during periods of drought, heatwave or all year round:",
+                "Si vous souhaitez les aider en Automne, en hiver, en période de sécheresse, de canicule, de reproduction... :",
+                "If you wish to help them during autumn, winter, periods of drought, heatwaves, or the breeding season...:",
               )}
             </Text>
           </View>

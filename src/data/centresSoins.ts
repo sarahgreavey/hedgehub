@@ -244,7 +244,7 @@ export const CENTERS_DATA = [
     id: 32,
     dept: "94",
     city: "Maisons-Alfort",
-    name: "Faune Alfort – ENVA École Vétérinaire d’Alfort",
+    name: "Faune Alfort – ENVA École Vétérinaire d’Alfort (attention fermeture les mercredis, samedis et dimanches)",
     phone: "01 43 96 70 20",
     email: "contact@faune-alfort.org",
   },

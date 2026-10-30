@@ -42,7 +42,7 @@ export default function Page() {
         "Conseils aux entreprises, \nà l'administration et aux particuliers.",
       saviez: "LE SAVIEZ-VOUS ?",
       footer:
-        "Nov. 2026. Pour la protection des hérissons imaginée par une humaine. Un concentré d'informations reposant sur la collaboration d'humains.nes précieux.ses qui partagent leurs connaissances. ",
+        "Nov. 2026. Application imaginée par une humaine. \nConcentré d'informations reposant sur la collaboration d'humains.nes précieux.ses qui partagent leurs connaissances. ",
     },
     en: {
       recognize: "RECOGNIZE\nA HEDGEHOG IN DISTRESS",

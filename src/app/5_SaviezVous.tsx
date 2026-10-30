@@ -43,7 +43,8 @@ export default function PremiersGestes() {
       section2: "Classement du hérisson",
       section3: "Le régime du hérisson",
       section4: "Les puces du hérisson",
-      section5: "Le tenrec-hérisson",
+      section5: "L'hibernation du hérisson",
+      section6: "Le tenrec-hérisson",
     },
     en: {
       title: "5. DID YOU KNOW?",
@@ -51,7 +52,8 @@ export default function PremiersGestes() {
       section2: "Classification of the hedgehog",
       section3: "The hedgehog diet",
       section4: "Hedgehog fleas",
-      section5: "The tenrec-hedgehog",
+      section5: "Hibernation of the hedgehog",
+      section6: "The tenrec-hedgehog",
     },
   }[language];
   const copy = (fr: string, en: string) => (language === "fr" ? fr : en);
@@ -309,7 +311,7 @@ export default function PremiersGestes() {
           <View style={[styles.illustrationContainer, { gap: 4 }]}></View>
           <View style={[styles.instructionContainer, { marginTop: 4 }]}>
             <View style={{ flexDirection: "row" }}>
-              <Text style={styles.instructionTextBullet}> {"\n"} </Text>
+              <Text style={styles.instructionTextBullet}> </Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
                   "Du fait que le hérisson ai une températeure corporelle plus basse que les autres mammifères, les puces du hérisson ne peuvent pas survivre sur d'autres animaux. Le hérisson est donc un hôte spécifique de la puce ",
@@ -328,9 +330,50 @@ export default function PremiersGestes() {
         </View>
 
         {/* SECTION 5 */}
+        <Text style={styles.sectionNumber}>{t.section5} </Text>
+
+        <Text style={[styles.instructionText, { flex: 1 }]}>
+          {copy(
+            "Selon la zone géographique, le début de l'hibernation du hérisson peut être différente :  ",
+            "Depending on the geographical area, the start of the hedgehog's hibernation period may vary: ",
+          )}
+        </Text>
         <View style={styles.section}>
-          <Text style={styles.sectionNumber}>{t.section5} </Text>
-          <View style={[styles.illustrationContainer, { gap: 4 }]}>
+          <View style={[styles.instructionContainer]}>
+            <View style={{ flexDirection: "row" }}>
+              <Text style={styles.instructionTextBullet}>{"▶"} </Text>
+              <Text style={[styles.instructionText, { flex: 1 }]}>
+                {copy(
+                  "Au Nord de la France, l'hibernation peut commencer à la mi-octobre jusqu'au début novembre (dès que les températures descendent régulièrement sous les 10 °C). ",
+                  "In the north of France, hibernation can begin in mid-October up to the start of November (once temperatures drop regularly below 10°C).",
+                )}
+              </Text>
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Text style={styles.instructionTextBullet}>{"▶"} </Text>
+              <Text style={[styles.instructionText, { flex: 1 }]}>
+                {copy(
+                  "Tandis qu'au Sud de la France, l'hibernation peut être plus tardive, souvent à partir de la mi-novembre, voire décembre selon les hivers doux.",
+                  "Whereas in the south of France, the onset of the overwintering period can occur later—often from mid-November, or even December during mild winters.",
+                )}
+              </Text>
+            </View>
+            <View style={{ flexDirection: "row" }}>
+              <Text style={styles.instructionTextBullet}>{"▶"} </Text>
+              <Text style={[styles.instructionText, { flex: 1 }]}>
+                {copy(
+                  "Le hérisson n'hiberne pas en continue. \nIl peut se réveiller tout les 8/10 jours. ",
+                  "The hedgehog does not hibernate continuously. \nIt can wake up every 8/10 days.",
+                )}
+              </Text>
+            </View>
+          </View>
+        </View>
+
+        {/* SECTION 6 */}
+        <View style={styles.section}>
+          <Text style={styles.sectionNumber}>{t.section6} </Text>
+          <View style={[styles.illustrationContainer]}>
             <View style={styles.illustrationRow}>
               <Image
                 source={require("../../assets/images/images_tenrec.jpg")} // Remplacez gloves.png par le vrai nom de votre fichier

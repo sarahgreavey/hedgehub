@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { useCallback, useRef } from "react";
 import {
   Image,
+  Linking,
   Platform,
   SafeAreaView,
   ScrollView,
@@ -127,7 +128,7 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}> </Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "Si vous souhaitez apporter un don en nature (nourriture, pochon polaire, cages ou matériel médical...), renseignez-vous auparavant, auprès de l'association concernant ses besoins. \n\nSi vous avez un peu de temps à consacrer, les centres de soins ont besoin de personnes qui puissent rapatrier les hérissons en détresse du lieu de leur découverte vers un centre de soins. Faites vous connaître auprès de ces derniers.\n\nLes centres de soins vivent essentiellement de dons de particuliers et parfois de rares subventions régionales, départementales ou municipales... En plus de personnes bénévoles, ils ont besoin d'argent pour soigner les hérissons : frais vétérinaires, nourriture, matériels médicaux... \n\nCes centres ont le même objectif : soigner les hérissons. Ce sont des associations reconnues d'intérêt général ; Votre don peut être déductible des impôts. Renseignez-vous sur les sites internet auprès de ces associations.",
+                  "Si vous souhaitez apporter un don en nature (nourriture, coutures de pochons en polaires, cages ou matériel médical...), renseignez-vous auparavant, auprès de l'association concernant ses besoins. \n\nSi vous avez un peu de temps à consacrer, les centres de soins ont besoin de personnes qui puissent rapatrier les hérissons en détresse du lieu de leur découverte vers un centre de soins. Faites vous connaître auprès de ces derniers.\n\nLes centres de soins vivent essentiellement de dons de particuliers et parfois de rares subventions régionales, départementales ou municipales... En plus de personnes bénévoles, ils ont besoin d'argent pour soigner les hérissons : frais vétérinaires, nourriture, matériels médicaux... \n\nCes centres ont le même objectif : soigner les hérissons. Ce sont des associations reconnues d'intérêt général ; Votre don peut être déductible des impôts. Renseignez-vous sur les sites internet auprès de ces associations.",
                   "If you wish to make a donation in kind (food, fleece bag, cages or medical equipment...), find out beforehand from the association regarding its needs. \n\nThe care centers live mainly from donations from individuals and sometimes from rare regional, departmental or municipal subsidies... In addition to volunteers, they need money to care for hedgehogs: veterinary costs, food, medical equipment... \n\nAll have the same goal: to care for hedgehogs. These are recognized associations of general interest; your donation may be tax deductible. Find out more on the websites from these associations.",
                 )}
               </Text>
@@ -199,7 +200,7 @@ export default function PremiersGestes() {
               <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
               <Text style={[styles.instructionText, { flex: 1 }]}>
                 {copy(
-                  "Même en hiver, proposez de l'eau : les hérissons n'hivernent pas d'une seule traite du mois d'octobre jusqu'au mois de mars/avril, et peuvent se réveiller. Vérifiez que l'eau ne soit pas gelée.",
+                  "Même en hiver, proposez de l'eau : les hérissons n'hibernent pas en continue pendant l'hiver et peuvent se réveiller. Vérifiez que l'eau ne soit pas gelée.",
                   "Offer water in winter too: hedgehogs do not hibernate for the entire season and may wake up. Check that the water has not frozen.",
                 )}
               </Text>
@@ -225,7 +226,7 @@ export default function PremiersGestes() {
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {copy(
                 "Plusieurs avis diffèrent : \nFaut-il donner des croquettes aux hérissons ? \nFaut-il les aider ponctuellement ou toute l'année ? \n",
-                "Several opinions differ: \nWill he give croquettes to the hedgehogs? \ nWill he help them occasionally or all year round?\n",
+                "Several opinions differ: \nShould hedgehogs be given kibble? \nShould they be helped occasionally or all year round?\n",
               )}
             </Text>
           </View>
@@ -234,7 +235,7 @@ export default function PremiersGestes() {
             <Text style={[styles.instructionText, { flex: 1 }]}>
               {copy(
                 "Chacunes et Chacuns pourra se faire son opinion mais un constat qui ne peut être ignoré : la multiplication des canicules, la raréfaction des insectes (le hérisson étant insectivore) face aux pesticides, les escargots et les limaces (bien que ce ne soit pas leur nourriture de prédilection) empoisonnés par le métaldéhyde sous forme de petits granulés bleus. Les hérissons qui ingèrent ces limaces sont ensuite empoisonnés. Toutes ces situations sont préoccupantes pour la survie des hérissons.\n",
-                "Offer cat kibble (it is smaller than dog kibble). Prefer chicken-based, grain-free varieties.\n\nSome suggested brands:\n",
+                "Everyone is free to form their own opinion, but some facts cannot be ignored: the increasing number of heatwaves, the decline of insects (hedgehogs being insectivores) due to pesticides, and snails and slugs (although they are not their preferred food) poisoned by metaldehyde in the form of small blue pellets. Hedgehogs that eat these slugs are then poisoned as well. All of these situations are a serious concern for the survival of hedgehogs.\n",
               )}
             </Text>
           </View>
@@ -485,6 +486,26 @@ export default function PremiersGestes() {
                   "Un espace longtemps resté sans activité peut être habité par des hérissons. Avant toute construction/travaux, vérifiez soigneusement la présence de nids d'animaux.",
                   "A site left undisturbed for a long time may be home to hedgehogs. Before any construction, carefully check for animal nests.",
                 )}
+              </Text>
+            </View>
+          </View>
+          <View style={styles.instructionContainer}>
+            <View style={{ flexDirection: "row" }}>
+              <Text style={styles.instructionTextBullet}>{"▶ "}</Text>
+              <Text style={[styles.instructionText, { flex: 1 }]}>
+                {copy(
+                  "Les agents municipaux peuvent être les premiers sollicités. Pour leur donner les moyens de réagir, Faune Alfort propose une formation consacrée à la reconnaissance des situations de détresse de la faune sauvage, aux précautions de manipulation et à l’orientation vers une prise en charge adaptée. Cette formation est dispensée par une animatrice et une soigneuse spécialisée dans les soins à la faune sauvage. Pour plus de renseignements, contactez par mail ",
+                  "Municipal staff are often the first to be called. To help them respond, Faune Alfort offers a training course on recognizing wildlife in distress, handling precautions, and referring animals to appropriate care. The training is led by an educator and a caretaker specialized in wildlife care. Contact: ",
+                )}
+                <Text
+                  style={{ color: "#1a73e8", textDecorationLine: "underline" }}
+                  onPress={() =>
+                    Linking.openURL("mailto:animation@faune-alfort.org")
+                  }
+                >
+                  animation@faune-alfort.org
+                </Text>
+                .
               </Text>
             </View>
           </View>
